@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Attachement] (
+    [AttachementID]          INT            IDENTITY (1, 1) NOT NULL,
+    [AttachementName]        NVARCHAR (MAX) NULL,
+    [AttachementDescription] NVARCHAR (MAX) NULL,
+    [AttachementFormat]      NVARCHAR (MAX) NULL,
+    [AttachementSize]        FLOAT (53)     NOT NULL,
+    [AttachementTypeID]      INT            NOT NULL,
+    [CommentID]              INT            NULL,
+    [AuditCheckID]           INT            NULL,
+    [AuditID]                INT            NULL,
+    [Latitude]               NVARCHAR (MAX) NULL,
+    [Longitude]              NVARCHAR (MAX) NULL,
+    [Location]               NVARCHAR (MAX) NULL,
+    [DateTime]               DATETIME       NULL,
+    [CreatedBy]              NVARCHAR (MAX) NULL,
+    [CreatedDateTime]        DATETIME2 (7)  NULL,
+    [LastModifiedBy]         NVARCHAR (MAX) NULL,
+    [LastModifiedDateTime]   DATETIME2 (7)  NULL,
+    CONSTRAINT [PK_Attachement] PRIMARY KEY CLUSTERED ([AttachementID] ASC),
+    CONSTRAINT [FK_Attachement_AttachementType_AttachementTypeID] FOREIGN KEY ([AttachementTypeID]) REFERENCES [dbo].[AttachementType] ([AttachementTypeID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Attachement_Audit_AuditID] FOREIGN KEY ([AuditID]) REFERENCES [dbo].[Audit] ([AuditID]),
+    CONSTRAINT [FK_Attachement_AuditCheck_AuditCheckID] FOREIGN KEY ([AuditCheckID]) REFERENCES [dbo].[AuditCheck] ([AuditCheckID]),
+    CONSTRAINT [FK_Attachement_Comment_CommentID] FOREIGN KEY ([CommentID]) REFERENCES [dbo].[Comment] ([CommentID])
+);
+

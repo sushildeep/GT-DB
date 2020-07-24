@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[UserResetPasswordOTPModel] (
+    [OTP]         VARCHAR (MAX)  NULL,
+    [USERNAME]    NVARCHAR (100) NOT NULL,
+    [CREATEDDATE] DATETIME       NULL,
+    PRIMARY KEY CLUSTERED ([USERNAME] ASC)
+);
+

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>GT.CR.DB.AccountManagement</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{fc43c793-8cfc-40c1-8e61-c4b7b22a5d1d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>GT.CR.DB.AccountManagement</RootNamespace>
+    <AssemblyName>GT.CR.DB.AccountManagement</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="GT\" />
+    <Folder Include="GT\Tables\" />
+    <Folder Include="GT\Stored Procedures\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\UserSession.sql" />
+    <Build Include="dbo\Tables\AccountInfoes.sql" />
+    <Build Include="dbo\Tables\BusinessModuleInfoes.sql" />
+    <Build Include="dbo\Tables\BusinessModules.sql" />
+    <Build Include="dbo\Tables\BusinessProcesses.sql" />
+    <Build Include="dbo\Tables\BusinessProcessInfoes.sql" />
+    <Build Include="dbo\Tables\UserAccountMappings.sql" />
+    <Build Include="dbo\Tables\UserContactInfo.sql" />
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\AccountAdditionalAttribute.sql" />
+    <Build Include="dbo\Tables\AccountAddressInfo.sql" />
+    <Build Include="dbo\Tables\AccountContactInfo.sql" />
+    <Build Include="dbo\Tables\AccountPreferences.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\Departments.sql" />
+    <Build Include="dbo\Tables\DomainADInfo.sql" />
+    <Build Include="dbo\Tables\FontPreferences.sql" />
+    <Build Include="dbo\Tables\LocationAddressInfo.sql" />
+    <Build Include="dbo\Tables\LocationArea.sql" />
+    <Build Include="dbo\Tables\LocationContactInfo.sql" />
+    <Build Include="dbo\Tables\MasterRoles.sql" />
+    <Build Include="dbo\Tables\OfficeLocation.sql" />
+    <Build Include="dbo\Tables\Privileges.sql" />
+    <Build Include="dbo\Tables\RolePrivileges.sql" />
+    <Build Include="dbo\Tables\Roles.sql" />
+    <Build Include="dbo\Tables\SubAreaInfo.sql" />
+    <Build Include="dbo\Tables\Teams.sql" />
+    <Build Include="dbo\Tables\TeamSubAreaMapping.sql" />
+    <Build Include="dbo\Tables\ThemePreferences.sql" />
+    <Build Include="dbo\Tables\UserAdditionalAttributes.sql" />
+    <Build Include="dbo\Tables\UserAddress.sql" />
+    <Build Include="dbo\Tables\UserLocationRole.sql" />
+    <Build Include="dbo\Tables\UserPreferences.sql" />
+    <Build Include="dbo\Tables\UserPrivileges.sql" />
+    <Build Include="dbo\Tables\UserResetPasswordOTPModel.sql" />
+    <Build Include="dbo\Tables\UserResetPasswordTokenModel.sql" />
+    <Build Include="dbo\Tables\UserSubAreaMapping.sql" />
+    <Build Include="dbo\Tables\UserTeamMapping.sql" />
+    <Build Include="dbo\Tables\UserTeams.sql" />
+    <Build Include="dbo\Tables\UserWorkGroups.sql" />
+    <Build Include="dbo\Tables\WorkGroups.sql" />
+    <Build Include="dbo\Views\SubAreaDetail.sql" />
+    <Build Include="dbo\Views\Account_BusinessProcess_BusinessModule_Subscription_Information.sql" />
+    <Build Include="dbo\Functions\getBMID.sql" />
+    <Build Include="dbo\Functions\getBusinessModuleInfoID.sql" />
+    <Build Include="dbo\Functions\samplefun.sql" />
+    <Build Include="dbo\Functions\SplitString.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertWorkGroups.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsAccountExistByAccountCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsBusinessModuleExistByAccountCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsBusinessModuleExistByBusinessModuleCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsDepartmentExistByDepartmentCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsRoleExistByRoleCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsTeamExistByTeamCode.sql" />
+    <Build Include="dbo\Stored Procedures\spMasterIsUserExistByUUID.sql" />
+    <Build Include="dbo\Stored Procedures\spUpdatePasswordChange.sql" />
+    <Build Include="dbo\Stored Procedures\spUpdateUserTeamMappings.sql" />
+    <Build Include="dbo\Stored Procedures\addOrUpdateUserSession.sql" />
+    <Build Include="dbo\Stored Procedures\ValidateUserSession.sql" />
+    <Build Include="dbo\Stored Procedures\IsUserLoggedinElsewhere.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteUserSession.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserAreasandSubAreasbyLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllLocationUserbyManager.sql" />
+    <Build Include="dbo\Stored Procedures\CheckPrivilege.sql" />
+    <Build Include="dbo\Stored Procedures\deletemastertables.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllCitiesByUUID.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllLocationsByCityAndUUID.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserDetailsByUUID.sql" />
+    <Build Include="dbo\Stored Procedures\Mig_UserPrivileges.sql" />
+    <Build Include="dbo\Stored Procedures\SP_CreateUser.sql" />
+    <Build Include="dbo\Stored Procedures\spAccountManagementMigration_All.sql" />
+    <Build Include="dbo\Stored Procedures\spCloneUserForGT.sql" />
+    <Build Include="dbo\Stored Procedures\SpCreateUser.sql" />
+    <Build Include="dbo\Stored Procedures\SPCreateUserModuleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\spGenerateUniqueCode.sql" />
+    <Build Include="dbo\Stored Procedures\spGetADInfobyDomain.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllAccountAbbByAccountModule.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllAssociatedUsers.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllAuditorsByLocationAndModule.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllModuleRolesByAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllModuleUsersByRole.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllPrivileges.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllRolesByAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllRoleUserByAccountID.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllSubOrdinatesByAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllSubOrdinatesByUser.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllTeamMembersByTeamByUUID.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllTeamSubOrdinatesByTeamByUUID.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllTimeZones.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserAreasbyLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spGetALLUserLocationRolesByAccountAndModuleCode.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserPreferences.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserRolesByAccountID.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUsersByRole.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserSubAreasbyLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spGetManagerInfoes.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserAddressInfoByUserName.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserAllHigherLevelTeamHierarchy.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserAllLowerLevelTeamHierarchy.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserContactInfoByUserName.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserEmailbyUserName.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserPreferences.sql" />
+    <Build Include="dbo\Stored Procedures\spGetUserPreferencesWithLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Mapping_BusinessModuleAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Mapping_BusinessProcessInfoes.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_AccountInfoes.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_Area_SubArea.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_BusinessModules.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_BusinessProcessesandModule.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_Departments.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_OfficeLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spInsert_Master_Teams.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertOfficeLocations.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertPrivileges.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertRolePrivileges.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertTeamMappings.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUserAccounts.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUserRoles.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUserTeams.sql" />
+    <Build Include="dbo\User Defined Types\TestTable.sql" />
+    <Build Include="dbo\User Defined Types\UserDomPositionPrefernceType.sql" />
+    <Build Include="dbo\User Defined Types\UserTeamMappingType.sql" />
+    <Build Include="dbo\Functions\getBusinessModuleInfoIDByName.sql" />
+    <Build Include="dbo\Stored Procedures\spMapUserLocationRoles.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserLocationsbyUUIDAndAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteUserRecords.sql" />
+    <Build Include="dbo\Stored Procedures\spCreateUserPreference.sql" />
+    <Build Include="dbo\Stored Procedures\spCreateUserLocation.sql" />
+    <Build Include="dbo\Stored Procedures\spCreateUserContact.sql" />
+    <Build Include="dbo\Stored Procedures\spCreateUserAddress.sql" />
+    <Build Include="dbo\Stored Procedures\spAddUserTeamMappings.sql" />
+    <Build Include="GT\Tables\DeviceInfo.sql" />
+    <Build Include="GT\Stored Procedures\spAddUserDeviceInfo.sql" />
+    <Build Include="Security\GT.sql" />
+  </ItemGroup>
+</Project>

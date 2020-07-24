@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[ScheduleDataExcel] (
+    [AuditName]                       NVARCHAR (255) NULL,
+    [AuditImage]                      NVARCHAR (255) NULL,
+    [AssignedToUserUUID]              NVARCHAR (255) NULL,
+    [AuditLocation]                   NVARCHAR (255) NULL,
+    [AuditFBO]                        NVARCHAR (255) NULL,
+    [AuditScheduledStartDateTime]     NVARCHAR (255) NULL,
+    [AuditScheduledEndDateTime]       NVARCHAR (255) NULL,
+    [AuditExpiryDateTime]             NVARCHAR (255) NULL,
+    [AuditCity]                       NVARCHAR (255) NULL,
+    [AuditType]                       NVARCHAR (255) NULL,
+    [AuditCategory]                   NVARCHAR (255) NULL,
+    [ChecklistScheduledStartDateTime] NVARCHAR (255) NULL,
+    [ChecklistScheduledEndDateTime]   NVARCHAR (255) NULL,
+    [AreaName]                        NVARCHAR (255) NULL,
+    [SubAreaName]                     NVARCHAR (255) NULL,
+    [SubAreaCode]                     NVARCHAR (255) NULL,
+    [ChecklistCode]                   NVARCHAR (255) NULL,
+    [CheckCode]                       NVARCHAR (255) NULL,
+    [AuditLocationCode]               NVARCHAR (255) NULL,
+    [AssignedToUserName]              NVARCHAR (255) NULL,
+    [id]                              INT            IDENTITY (1, 1) NOT NULL,
+    [AuditInfoID]                     INT            NULL,
+    [ChecklistInfoID]                 INT            NULL,
+    [AreaChecksID]                    INT            NULL
+);
+

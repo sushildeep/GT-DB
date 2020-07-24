@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GT.CR.DB.AccountManagement", "GT.CR.DB.AccountManagement\GT.CR.DB.AccountManagement.sqlproj", "{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GT.CR.DB.AuditManagement", "GT.CR.DB.AuditManagement\GT.CR.DB.AuditManagement.sqlproj", "{9EF29A10-6AB0-4613-A3E5-2135153E52BC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GT.CR.DB.MasterManagement", "GT.CR.DB.MasterManagement\GT.CR.DB.MasterManagement.sqlproj", "{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC43C793-8CFC-40C1-8E61-C4B7B22A5D1D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF29A10-6AB0-4613-A3E5-2135153E52BC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAA2A7B-94DF-4CEF-800C-86EE198296E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5884EDA-A5EA-4BB3-9EA3-DBEE4B92AED0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.pratian.com/tfs/greentick
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GT.CR.DB.AccountManagement\\GT.CR.DB.AccountManagement.sqlproj
+		SccProjectName1 = GT.CR.DB.AccountManagement
+		SccLocalPath1 = GT.CR.DB.AccountManagement
+		SccProjectUniqueName2 = GT.CR.DB.AuditManagement\\GT.CR.DB.AuditManagement.sqlproj
+		SccProjectName2 = GT.CR.DB.AuditManagement
+		SccLocalPath2 = GT.CR.DB.AuditManagement
+		SccProjectUniqueName3 = GT.CR.DB.MasterManagement\\GT.CR.DB.MasterManagement.sqlproj
+		SccProjectName3 = GT.CR.DB.MasterManagement
+		SccLocalPath3 = GT.CR.DB.MasterManagement
+	EndGlobalSection
+EndGlobal
